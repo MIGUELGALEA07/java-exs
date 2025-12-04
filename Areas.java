@@ -22,6 +22,14 @@ public class Areas {
                 double r = ed.nextDouble();
                 System.out.println("El área es: " + Areacirculo.computearea(r));
                 break;
+            case 3:
+                System.out.println("Ingrese la altura: ");
+                double h = ed.nextDouble();
+                System.out.println("Ingrese la base: ");
+                double b = ed.nextDouble();
+
+                System.out.println("El área es: "+Areatriangulo.computearea(h, b));
+                break;
             default:
                 System.out.println("Opción no válida");
                 break;
