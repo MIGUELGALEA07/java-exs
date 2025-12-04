@@ -1,22 +1,33 @@
-public class Areas(
-Run | Debug 1 Run main | Debug main public static void main(String(] args)(
-Scanner ed • new Scanner (Systen. in) ;
-System. out-printin(x: "Calculador de areas: \n1.-Cuadrado\n2.-Circulo") ;
-int op = ed.nextInt();
-switch
-(op) (
-case 1:
-System.out-printIn(x: "Ingrese el lado del circulo: ");
-double l = ed.nextDouble();
-Systen.out.printIn("El área es: "+AreaCuadrado.computearea(1)):
-break;
-case 2:
-system.out-printIn(x: "Ingrese el radio: "):
-double r = ed.nextDoublel):
-Systen.out-print In("El área es: "+AreaCirculo.computearea(r));
-break;
-default:
-System.out-printIn(x: "Opcion no valida"): break;
-ed.close();
-}
+import java.util.Scanner;
+
+public class Areas {
+    
+    
+
+    public static void main(String[] args) {
+        Scanner ed = new Scanner(System.in);
+        
+        System.out.println("Calculador de áreas: \n1.-Cuadrado\n2.-Círculo");
+        
+        int op = ed.nextInt();
+        
+        switch (op) {
+            case 1:
+                System.out.println("Ingrese el lado del cuadrado: ");
+                double l = ed.nextDouble();
+                System.out.println("El área es: " + Areacuadrado.computearea(l));
+                break;
+            case 2:
+                System.out.println("Ingrese el radio: ");
+                double r = ed.nextDouble();
+                System.out.println("El área es: " + Areacirculo.computearea(r));
+                break;
+            default:
+                System.out.println("Opción no válida");
+                break;
+        }
+        
+        // Cerrar el Scanner al finalizar
+        ed.close();
+    }
 }
