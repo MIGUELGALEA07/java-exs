@@ -30,12 +30,29 @@ public class Areas {
 
                 System.out.println("El área es: "+Areatriangulo.computearea(h, b));
                 break;
+
+                case 4:
+                System.out.println("Ingrese el lado: ");
+                double la = ed.nextDouble();
+                System.out.println("Ingrese la apotema: ");
+                double ap = ed.nextDouble();
+
+                System.out.println("El área es: "+AreaHexagono.computearea(la, ap));
+                break;
+
+                case 5:
+                System.out.println("Ingrese el lado: ");
+                double lado = ed.nextDouble();
+                
+
+                System.out.println("El área es: "+Areapentagono.computearea(lado));
+                break;
             default:
                 System.out.println("Opción no válida");
                 break;
         }
         
-        // Cerrar el Scanner al finalizar
+       
         ed.close();
     }
 }
